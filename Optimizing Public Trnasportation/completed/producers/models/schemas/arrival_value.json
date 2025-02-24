@@ -1,0 +1,44 @@
+{
+  "type": "record",
+  "name": "ArrivalEvent",
+  "namespace": "org.chicago.cta",
+  "fields": [
+    {
+      "name": "station_id",
+      "type": "int",
+      "doc": "Unique identifier for the station"
+    },
+    {
+      "name": "train_id",
+      "type": "string",
+      "doc": "Unique identifier for the train"
+    },
+    {
+      "name": "direction",
+      "type": "string",
+      "doc": "Direction of the train ('a' or 'b')"
+    },
+    {
+      "name": "line",
+      "type": "string",
+      "doc": "Train line color (e.g., 'red', 'blue', 'green')"
+    },
+    {
+      "name": "train_status",
+      "type": "string",
+      "doc": "Status of the train (e.g., 'on_time', 'delayed')"
+    },
+    {
+      "name": "prev_station_id",
+      "type": ["null", "int"],
+      "default": null,
+      "doc": "Previous station ID, nullable if no previous station"
+    },
+    {
+      "name": "prev_direction",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Direction from previous station, nullable if first station"
+    }
+  ]
+}

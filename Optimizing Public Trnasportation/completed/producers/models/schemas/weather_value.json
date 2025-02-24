@@ -1,0 +1,17 @@
+{
+  "type": "record",
+  "name": "WeatherEvent",
+  "namespace": "org.chicago.cta",
+  "fields": [
+    {
+      "name": "temperature",
+      "type": "float",
+      "doc": "Temperature in degrees Fahrenheit"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "doc": "Weather condition (e.g., 'sunny', 'cloudy', 'rainy', 'snowy')"
+    }
+  ]
+}

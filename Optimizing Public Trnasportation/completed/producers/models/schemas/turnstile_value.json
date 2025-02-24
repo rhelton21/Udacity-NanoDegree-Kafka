@@ -1,0 +1,22 @@
+{
+  "type": "record",
+  "name": "TurnstileEvent",
+  "namespace": "org.chicago.cta",
+  "fields": [
+    {
+      "name": "station_id",
+      "type": "int",
+      "doc": "Unique identifier for the station"
+    },
+    {
+      "name": "station_name",
+      "type": "string",
+      "doc": "Name of the station where the turnstile entry was recorded"
+    },
+    {
+      "name": "line",
+      "type": "string",
+      "doc": "Color of the train line associated with the station"
+    }
+  ]
+}
